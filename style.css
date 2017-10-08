@@ -1,0 +1,63 @@
+html, body {
+    width: 100%;
+    height: 100%;
+
+    margin: 0;
+    padding: 0;
+}
+
+.tableContainer {
+    display:inline-block;
+    *display:inline;
+
+    width: 100%;
+    height: calc(100% - 250px);
+    
+    background-color: green;
+
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.detailsContainer {
+    height: 250px;
+    min-height: 150px;
+
+    margin-top: -5px;
+
+    background-color: gold;
+}
+
+.tableFixedContainer {
+    display: inline-block;
+    *display: inline;
+    vertical-align: top;
+    width: 300px;
+}
+
+.tableFixed {
+    width: 300px;  
+}
+
+.tableScrollableContainer {
+    display:inline-block;
+    *display:inline;
+
+    width: calc(100% - 314px);
+    
+    overflow-x: scroll;
+    vertical-align: top;
+}
+
+table > thead > tr > th,
+table > tbody > tr > td {
+    white-space: nowrap;
+}
+
+.idField {
+    cursor: pointer;
+}
+
+.display-none {
+    display: none;
+}

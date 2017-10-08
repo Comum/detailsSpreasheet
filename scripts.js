@@ -344,7 +344,25 @@
         updateTable(tdValues, sortingOrder);
     }
 
+    function displayInformation() {
+        var $this = $(this);
+        var itemId = $this.find('.js-item-id').text();
+        var itemCreator = $this.find('.js-item-creator').text();
+        var itemDate = $this.find('.js-item-date').text();
+        var columnIndex = getColumnIndex($this)
+
+        console.log(itemId, itemCreator, itemDate, columnIndex);
+
+        $('.js-destination-creator').text(itemCreator);
+        $('.js-destination-id').text(itemId);
+        $('.js-destination-date').text(itemDate);
+        $('.js-destination-property1').text(itemCreator);
+        $('.js-destination-property2').text(itemCreator);
+        $('.js-destination-property3').text(itemCreator);
+    }
+
     $orderingHook.on('click', tableSorting);
     $showKeyWordFilterTag.on('click', toggleKeyWordFilters);
     $keyWordFilter.on('keyup', tableKeyWordFiltering);
+    $('.js-item-trigger').on('click', displayInformation);
 })(window);

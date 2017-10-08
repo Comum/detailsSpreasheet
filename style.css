@@ -61,3 +61,28 @@ table > tbody > tr > td {
 .display-none {
     display: none;
 }
+
+.no-margin {
+    margin: 0;
+}
+
+.detailsInnerContainer {
+    width: calc(50% - 10px);
+    height: calc(100% - 28px);
+    float: left;
+}
+
+ul {
+    margin-left: 10px;
+    padding: 0;
+
+    list-style-type: none;
+}
+
+ul > li {
+    margin-bottom: 10px;
+}
+
+ul > li:last-child {
+    margin-bottom: 0;
+}
